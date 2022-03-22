@@ -1,2 +1,40 @@
 version: '2'
 services:
+  db:
+    image: mongo:latest
+    container_name: db
+    ports:
+      - 27017:27017
+
+  ls1:
+    build:
+      context: ./LogService
+      dockerfile: Dockerfile
+    container_name: ls1
+    ports:
+      - 35001:35000
+
+  ls2:
+    build:
+      context: ./LogService
+      dockerfile: Dockerfile
+    container_name: ls2
+    ports:
+      - 35002:35000
+
+  ls3:
+    build:
+      context: ./LogService
+      dockerfile: Dockerfile
+    container_name: ls3
+    ports:
+      - 35003:35000
+
+  lb:
+    build:
+      context: ./LoadBalancer
+      dockerfile: Dockerfile
+    container_name: lb
+    ports:
+      - 3500:3500
+

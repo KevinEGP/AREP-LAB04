@@ -1,0 +1,4 @@
+co/edu/eci/controllers/LogController.class
+co/edu/eci/persistence/MongoDB.class
+co/edu/eci/models/Log.class
+co/edu/eci/App.class

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+</head>
+<body onload="getLogs()">
+  <div class="container">
+    <h1>Load Balancer & Docker</h1>
+    <div class="field">
+      <input id="value" placeholder="Ingrese el valor que desea guardar" type="text">
+      <button onclick="saveLog()">Guardar</button>
+    </div>
+
+    <p id="result"></p>
+
+    <div id="tableContainer"></div>
+  </div>
+</body>
+</html>
